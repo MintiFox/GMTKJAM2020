@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7043946192887300225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28689832d404fe740ad2042c945ab29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  edgeBox: {fileID: 2977569844517734614, guid: 0ee2d13dcb7237f479b47b4cfca26c42, type: 3}
   movmentSpeed: 30
   torqueSpeed: 30
 --- !u!50 &7043946192887300227
@@ -65,5 +66,5 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
