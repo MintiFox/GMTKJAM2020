@@ -47,6 +47,8 @@ MonoBehaviour:
   edgeBox: {fileID: 2977569844517734614, guid: 0ee2d13dcb7237f479b47b4cfca26c42, type: 3}
   movmentSpeed: 30
   torqueSpeed: 30
+  maxVelocity: 1.75
+  maxAngularVelocity: 400
 --- !u!50 &7043946192887300227
 Rigidbody2D:
   serializedVersion: 4

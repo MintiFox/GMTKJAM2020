@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public GameObject edgeBox;
     public float movmentSpeed = 1.0F;
     public float torqueSpeed = 1.0F;
+    public float maxVelocity = 1.75F;
+    public float maxAngularVelocity = 400.0F;
 
     public static float VerticalSize
     {
@@ -63,7 +65,8 @@ public class Player : MonoBehaviour
             rigidBody.AddForce(Time.fixedDeltaTime * movmentSpeed * transform.up);
         }
 
-        rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -1.0F, 1.0F), Mathf.Clamp(rigidBody.velocity.y, -1.0F, 1.0F));
+        rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -maxVelocity, maxVelocity), Mathf.Clamp(rigidBody.velocity.y, -maxVelocity, maxVelocity));
+        rigidBody.angularVelocity = Mathf.Clamp(rigidBody.angularVelocity, -maxAngularVelocity, maxAngularVelocity);
     }
 }
 
