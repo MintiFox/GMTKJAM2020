@@ -43,7 +43,9 @@ public class Spawner : MonoBehaviour
             if (getPosition(nextPositionInRange, getPossibleRanges(), out float position, out RangeFloat range))
             {
                 GameObject obj = objects[UnityEngine.Random.Range(0, objects.Length)];
-                ApplyVelocity(Instantiate(obj, transform.TransformPoint(offset + new Vector3(position - 0.5F, 0.0F)) * Vector2.one, obj.transform.rotation));
+                GameObject iobj = Instantiate(obj, transform.TransformPoint(offset + new Vector3(position - 0.5F, 0.0F)) * Vector2.one, obj.transform.rotation);
+
+                ApplyVelocity(iobj);
                 
                 blocked.Add(range);
                 yield return new WaitForSeconds(blockTime);
@@ -173,7 +175,17 @@ public class Spawner : MonoBehaviour
     {
         SetVelocity sv = obj.GetComponent<SetVelocity>();
         Vector3 velocity = verticalVelocity.RandomFloat() * transform.up + horiziontalVelocity.RandomFloat() * (flip ? -1.0F : 1.0F) * transform.right;
-        sv.initialVelocity = new Vector2(velocity.x, Mathf.Max(velocity.y, -0.5F));
+        if (sv != null)
+        {
+            sv.initialVelocity = velocity;
+        }
+
+        if (obj.GetComponent<SetRotation>() != null)
+        {
+            Vector2 dir = velocity - obj.transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            obj.transform.rotation = Quaternion.AngleAxis(angle - 90.0F, Vector3.forward);
+        }
     }
 
     public class RangeFloatComparer : IComparer<RangeFloat>
