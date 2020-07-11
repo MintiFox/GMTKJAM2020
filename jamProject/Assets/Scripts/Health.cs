@@ -2,26 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public float health = 3;
+    public int health = 3;
 
+    public Image[] hearts;
 
-    // Start is called before the first frame update
-    void Start()
+    public Sprite fullSprite;
+    public Sprite emptySprite;
+
+    public void Damage(int dmg)
     {
-        
-    }
+        health -= dmg;
+        updateUI();
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(health <= 0)
+
+        if (health <= 0)
         {
             SceneManager.LoadScene("TitleScene");
         }
     }
+
+
+    void updateUI()
+    {
+        for (int i = 0; i < health; i++)
+        {
+            hearts[i].sprite = fullSprite;
+
+
+        }
+        for (int i = health; i < hearts.Length; i++)
+        {
+            hearts[i].sprite = emptySprite;
+        }
+    
+    }
+
+
+
 
 
 }

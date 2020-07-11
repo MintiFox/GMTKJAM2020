@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    public float damage = 1f;
+    public int damage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Damage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Health>().health -= damage;
+            other.GetComponent<Health>().Damage(damage);
             Destroy(gameObject, 0.1f);
         }
     }
