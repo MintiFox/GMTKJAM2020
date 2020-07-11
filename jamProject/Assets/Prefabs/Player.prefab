@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1985834187592449421}
   - component: {fileID: 1881563738}
   - component: {fileID: 1881563742}
+  - component: {fileID: 3384124691176600994}
+  - component: {fileID: 2228339315243400711}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -47,11 +49,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28689832d404fe740ad2042c945ab29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  edgeBox: {fileID: 2977569844517734614, guid: 0ee2d13dcb7237f479b47b4cfca26c42, type: 3}
   movmentSpeed: 6000
   torqueSpeed: 1500
   maxVelocity: 100
   maxAngularVelocity: 500
+  spawnTime: 2
+  up: {fileID: 0}
+  down: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
 --- !u!50 &7043946192887300227
 Rigidbody2D:
   serializedVersion: 4
@@ -159,3 +165,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3384124691176600994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7043946192887300225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3b2ea02f7c8f54b8e4ade037111853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+--- !u!114 &2228339315243400711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7043946192887300225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 480a1195eb78b9f418683c5fcb84fd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

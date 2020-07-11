@@ -14,12 +14,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FModProject/jam2020/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637300535932252006
+  lastModified: 637300618335163319
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 734
+    Value: 828
   Exists: 1
+--- !u!114 &-7985854755100448190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300598777065816
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-7240878033164972643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300591998563576
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7012924961057871722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,6 +74,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-6159137216940397401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300592008215276
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-5300701262559198982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +148,83 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-4662113106419928914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300618335083357
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4602117914165400923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300592490871004
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4544328741610284483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300617667225160
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3861583270385419262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: 5bdf2ea6a1687d4e89d5cf25ad1622ae
+  Banks:
+  - {fileID: 1068269186630874793}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 20571
 --- !u!114 &-3456841520703295807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +315,42 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-713460740363466820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300591623584746
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-92752356452270607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300593057579969
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,16 +365,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -8218862716669921117}
-  - {fileID: -2843199295117443550}
-  - {fileID: -7012924961057871722}
-  EditorEvents: []
+  - {fileID: -4662113106419928914}
+  - {fileID: 1068269186630874793}
+  EditorEvents:
+  - {fileID: -3861583270385419262}
+  - {fileID: 4842328400043587250}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2843199295117443550}
+  - {fileID: -4662113106419928914}
   StringsBanks:
   - {fileID: -8218862716669921117}
-  stringsBankWriteTime: 637300535932252006
+  stringsBankWriteTime: 637300618335163319
   cacheVersion: 3
+--- !u!114 &522810355621775509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300592490431289
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1068269186630874793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300618335561200
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1808522584622013708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300591623754641
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2274553840853097086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +449,60 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2391912156402333494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300593058039835
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2754308718470288345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300615387129755
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2926447619226434354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300588064435147
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &3377280526569868568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +518,101 @@ MonoBehaviour:
   Path: FModProject/jam2020/Build/Desktop/Music.bank
   SubDir: 
   lastModified: 637300029943817805
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3566287747711651204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300598776536127
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4835593189443249143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300615386619993
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4842328400043587250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music3d
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music3d
+  guid: cd7ab6f3f479fd4485988366d28ffbec
+  Banks:
+  - {fileID: 1068269186630874793}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20571
+--- !u!114 &6001142943604923418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637300588064265277
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6564751723262351567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637300617668204661
   LoadResult: 0
   FileSizes: []
   Exists: 0
