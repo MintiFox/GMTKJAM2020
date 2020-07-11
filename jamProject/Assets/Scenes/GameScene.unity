@@ -185,7 +185,7 @@ SpriteRenderer:
   m_Size: {x: 0.96, y: 3.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &50313323
@@ -899,19 +899,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1881563737, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7043946192887300225, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7043946192887300225, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7043946192887300228, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
         type: 3}
@@ -968,6 +959,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1881563737, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b, type: 3}

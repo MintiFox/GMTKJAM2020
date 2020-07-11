@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public float maxVelocity = 1.75F;
     public float maxAngularVelocity = 400.0F;
 
+    private Spawner[] spawner;
+
     public static float VerticalSize
     {
         get
@@ -33,14 +35,53 @@ public class Player : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        InstantiateWalls();
+    }
 
-        GameObject right = Instantiate(edgeBox, new Vector2(HorizontalSize + 0.5F, 0.0F), Quaternion.identity);
-        GameObject left = Instantiate(edgeBox, new Vector2(-HorizontalSize - 0.5F, 0.0F), Quaternion.identity);
-        left.transform.localScale = right.transform.localScale = new Vector2(1.0F, VerticalSize * 2.0F + 2.0F);
+    void OnEnable()
+    {
+        
+    }
 
-        GameObject up = Instantiate(edgeBox, new Vector2(0.0F, VerticalSize + 0.5F), Quaternion.identity);
-        GameObject down = Instantiate(edgeBox, new Vector2(0.0F, -VerticalSize - 0.5F), Quaternion.identity);
-        down.transform.localScale = up.transform.localScale = new Vector2(HorizontalSize * 2.0F + 2.0F, 1.0F);
+    private void InstantiateWalls()
+    {
+        Vector2 hPos = new Vector2(HorizontalSize + 0.5F, 0.0F);
+        Vector2 vPos = new Vector2(0.0F, VerticalSize + 0.5F);
+        Vector2 vSize = new Vector2(VerticalSize * 2.0F + 2.0F, 1.0F);
+        Vector2 hSize = new Vector2(HorizontalSize * 2.0F + 2.0F, 1.0F);
+
+        // INSTANTIATE
+        GameObject right = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
+        GameObject left = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
+        GameObject up = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
+        GameObject down = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
+
+        // SCALE
+        right.transform.localScale = left.transform.localScale = vSize;
+        down.transform.localScale = up.transform.localScale = hSize;
+
+        // PARENT
+        right.transform.parent = left.transform.parent = down.transform.parent = up.transform.parent = Camera.main.transform;
+
+        // MOVE
+        right.transform.localPosition = hPos;
+        left.transform.localPosition = -hPos;
+        up.transform.localPosition = vPos;
+        down.transform.localPosition = -vPos;
+        
+        // ROTATE
+        right.transform.localRotation = Quaternion.Euler(0.0F, 0.0F, 90F);
+        left.transform.localRotation = Quaternion.Euler(0.0F, 0.0F, -90F);
+        up.transform.localRotation = Quaternion.Euler(0.0F, 0.0F, 180F);
+        down.transform.localRotation = Quaternion.identity;
+
+        // SET
+        spawner = new Spawner[4] { 
+            right.GetComponent<Spawner>(),
+            left.GetComponent<Spawner>(),
+            up.GetComponent<Spawner>(),
+            down.GetComponent<Spawner>()
+        };
     }
 
     void Update()
