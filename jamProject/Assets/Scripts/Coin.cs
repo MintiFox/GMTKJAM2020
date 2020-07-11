@@ -8,12 +8,14 @@ public class Coin : MonoBehaviour
     public float speed;
 
     public int coins;
+    public Text coinsUI;
 
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.up * Time.deltaTime * speed);
+        coinsUI.text = coins.ToString();
     }
 
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 365049321232774697}
   - component: {fileID: 365049321232774698}
   - component: {fileID: -1565047730902341727}
+  - component: {fileID: 1213172133918233009}
   m_Layer: 9
   m_Name: Baloof
   m_TagString: Untagged
@@ -116,7 +117,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.17752257}
@@ -135,3 +136,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max: 3
+--- !u!114 &1213172133918233009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365049321232774699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346f7959b0442e04481f6ae6d95dc06e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
