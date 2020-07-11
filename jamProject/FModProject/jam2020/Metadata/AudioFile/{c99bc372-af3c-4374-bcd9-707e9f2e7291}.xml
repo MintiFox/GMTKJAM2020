@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c99bc372-af3c-4374-bcd9-707e9f2e7291}">
+		<property name="assetPath">
+			<value>MM_Music_Placeholder_01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>20.571437499999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dbf451e7-06ea-4a26-9b17-4afe9681b57e}</destination>
+		</relationship>
+	</object>
+</objects>
