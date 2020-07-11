@@ -33,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3988852191183157916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -2, z: 0}
+  m_LocalPosition: {x: 2.086, y: 0.122, z: 0}
   m_LocalScale: {x: 0.81552, y: 0.81552, z: 0.81552}
   m_Children: []
   m_Father: {fileID: 0}
@@ -175,8 +175,8 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
+      atime1: 43176
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
@@ -184,7 +184,7 @@ TrailRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 6
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 3
     alignment: 0
