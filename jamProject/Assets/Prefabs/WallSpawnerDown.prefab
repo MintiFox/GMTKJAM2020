@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 3988852191183157916, guid: 4ed255b24b352bb4a8639ea08ae81026, type: 3}
   - {fileID: 9131105798010918450, guid: fdb4aca3798af594d93222a5fbb6278a, type: 3}
   - {fileID: 1481009487385242239, guid: 1be183335e3c86e459767adb43f4ff64, type: 3}
+  - {fileID: 7517830922766720255, guid: 6470d47184d9b724ea5b44bc1c122c8e, type: 3}
   - {fileID: 365049321232774699, guid: a7ebe9b8bbcba5d4d8dc6b54c19945d4, type: 3}
   offset: {x: 0, y: -2, z: 0}
   blockTime: 0
