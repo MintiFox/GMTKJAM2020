@@ -66,7 +66,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: 4e42b394fd710d5469b023628aa3dd68, type: 2}
   - {fileID: 2100000, guid: e9ab4c6878c9f9d48b45244f7b9f8839, type: 2}
-  - {fileID: 4913911580219713836, guid: 34e55541c8056854b95d2aa78556efcc, type: 3}
+  - {fileID: 2100000, guid: a3a1094a4de8d53468a41c2a7b335abe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialVelocity: {x: 0, y: 0}
+  relativeSpace: 0
 --- !u!114 &3134362755004772478
 MonoBehaviour:
   m_ObjectHideFlags: 0
