@@ -5,12 +5,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject edgeBox;
+    
     public float movmentSpeed = 1.0F;
     public float torqueSpeed = 1.0F;
     public float maxVelocity = 1.75F;
     public float maxAngularVelocity = 400.0F;
 
+    public float spawnTime = 2.0F;
+
+    [Header("Walls")]
+    public GameObject up;
+    public GameObject down;
+    public GameObject left;
+    public GameObject right;
     private Spawner[] spawner;
 
     public static float VerticalSize
@@ -40,7 +47,16 @@ public class Player : MonoBehaviour
 
     void OnEnable()
     {
-        
+        StartCoroutine(Spawn());
+    }
+
+    private IEnumerator Spawn()
+    {
+        while (isActiveAndEnabled)
+        {
+            yield return new WaitForSeconds(spawnTime);
+            StartCoroutine(spawner[UnityEngine.Random.Range(0, spawner.Length - 1)].Spawn());
+        }
     }
 
     private void InstantiateWalls()
@@ -50,11 +66,11 @@ public class Player : MonoBehaviour
         Vector2 vSize = new Vector2(VerticalSize * 2.0F + 2.0F, 1.0F);
         Vector2 hSize = new Vector2(HorizontalSize * 2.0F + 2.0F, 1.0F);
 
-        // INSTANTIATE
-        GameObject right = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
-        GameObject left = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
-        GameObject up = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
-        GameObject down = Instantiate(edgeBox, Vector3.zero, Quaternion.identity);
+        // IN
+        GameObject up = Instantiate(this.up, Vector3.zero, Quaternion.identity);
+        GameObject down = Instantiate(this.down, Vector3.zero, Quaternion.identity);
+        GameObject left = Instantiate(this.left, Vector3.zero, Quaternion.identity);
+        GameObject right = Instantiate(this.right, Vector3.zero, Quaternion.identity);
 
         // SCALE
         right.transform.localScale = left.transform.localScale = vSize;
@@ -75,12 +91,12 @@ public class Player : MonoBehaviour
         up.transform.localRotation = Quaternion.Euler(0.0F, 0.0F, 180F);
         down.transform.localRotation = Quaternion.identity;
 
-        // SET
-        spawner = new Spawner[4] { 
-            right.GetComponent<Spawner>(),
+        spawner = new Spawner[]
+        {
+            down.GetComponent<Spawner>(),
+            down.GetComponent<Spawner>(),
             left.GetComponent<Spawner>(),
-            up.GetComponent<Spawner>(),
-            down.GetComponent<Spawner>()
+            right.GetComponent<Spawner>()
         };
     }
 
