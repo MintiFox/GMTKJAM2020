@@ -58,3 +58,12 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+jamProject/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+jamProject/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset
+jamProject/Assets/Sprites/background1.png.meta
+jamProject/Assets/StreamingAssets/Master.strings.bank
+jamProject/Assets/StreamingAssets/Music.bank
+jamProject/Assets/StreamingAssets/Music.bank.meta
+jamProject/fmod_editor.log
+jamProject/Assets/StreamingAssets/Master.strings.bank
+jamProject/fmod_editor.log

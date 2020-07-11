@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1084650888651829330}
   - component: {fileID: 1084650888651829326}
   - component: {fileID: 2915488415349139782}
+  - component: {fileID: -7126179767901894126}
   m_Layer: 9
   m_Name: asteroid
   m_TagString: Untagged
@@ -63,9 +64,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -382652638819485698, guid: 34e55541c8056854b95d2aa78556efcc, type: 3}
-  - {fileID: -2653651044934150266, guid: 34e55541c8056854b95d2aa78556efcc, type: 3}
-  - {fileID: 4913911580219713836, guid: 34e55541c8056854b95d2aa78556efcc, type: 3}
+  - {fileID: 2100000, guid: 80edf007af095cf42b6e54e178317382, type: 2}
+  - {fileID: 2100000, guid: 419548c1d7e0f7c4f8a89564e045aa9f, type: 2}
+  - {fileID: 2100000, guid: 4e42b394fd710d5469b023628aa3dd68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,7 +118,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialVelocity: {x: 0.5, y: 1}
+  relativeSpace: 0
 --- !u!114 &2915488415349139782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +164,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max: 3
+--- !u!114 &-7126179767901894126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273626582976449797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346f7959b0442e04481f6ae6d95dc06e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1

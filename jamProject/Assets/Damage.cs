@@ -20,13 +20,10 @@ public class Damage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && GetComponent<invincible>().InvIsActive != true)
+        if (other.CompareTag("Player"))
         {
-            GetComponent<Health>().health = GetComponent<Health>().health - damage;
-        }
-        else
-        {
+            other.GetComponent<Health>().health -= damage;
             Destroy(gameObject, 0.1f);
         }
     }
- }
+}

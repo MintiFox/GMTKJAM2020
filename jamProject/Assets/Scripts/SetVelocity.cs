@@ -8,12 +8,29 @@ public class SetVelocity : MonoBehaviour
     public Vector2 initialVelocity;
     Rigidbody2D rb;
 
+    public enum ReletiveSpace
+    {
+        World, Local
+    }
+    public ReletiveSpace relativeSpace;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = initialVelocity;
+
+        if (relativeSpace.Equals(ReletiveSpace.World))
+        {
+            rb.velocity = initialVelocity;
+        }
+        else if (relativeSpace.Equals(ReletiveSpace.Local))
+        {
+            rb.velocity = transform.InverseTransformDirection(initialVelocity);
+        
+        }
+
+
+
     }
 
    
