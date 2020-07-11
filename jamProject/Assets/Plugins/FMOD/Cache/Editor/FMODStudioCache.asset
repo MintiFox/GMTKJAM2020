@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FModProject/jam2020/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637300618335163319
+  lastModified: 637295463640411140
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 828
+    Value: 688
   Exists: 1
 --- !u!114 &-7985854755100448190
 MonoBehaviour:
@@ -225,6 +225,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 20571
+--- !u!114 &-3771367866519405649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FModProject/jam2020/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637295463640291116
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3456841520703295807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,17 +383,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -8218862716669921117}
-  - {fileID: -4662113106419928914}
-  - {fileID: 1068269186630874793}
-  EditorEvents:
-  - {fileID: -3861583270385419262}
-  - {fileID: 4842328400043587250}
+  - {fileID: -3771367866519405649}
+  EditorEvents: []
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4662113106419928914}
+  - {fileID: -3771367866519405649}
   StringsBanks:
   - {fileID: -8218862716669921117}
-  stringsBankWriteTime: 637300618335163319
+  stringsBankWriteTime: 637295463640411140
   cacheVersion: 3
 --- !u!114 &522810355621775509
 MonoBehaviour:
