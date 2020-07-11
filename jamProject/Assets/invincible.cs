@@ -18,7 +18,7 @@ public class invincible : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.J) && GetComponent<Coin>().coins >= 5 && lastTimer > 0)
+        if (Input.GetKeyDown(KeyCode.J) && CoinBar.instance.currentCount >= 5 && lastTimer > 0)
         {
             lastTimer -= Time.deltaTime;
             InvIsActive = true;

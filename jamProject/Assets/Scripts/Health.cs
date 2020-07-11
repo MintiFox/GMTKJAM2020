@@ -18,6 +18,9 @@ public class Health : MonoBehaviour
         health -= dmg;
         updateUI();
 
+        if (AudioManager.instance != null)
+        AudioManager.instance.playerHurtSounds.PlayRandom();
+
 
         if (health <= 0)
         {

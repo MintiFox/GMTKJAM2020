@@ -7,15 +7,15 @@ public class Coin : MonoBehaviour
 {
     public float speed;
 
-    public int coins;
-    public Text coinsUI;
+    //public int coins;
+    //public Text coinsUI;
 
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.up * Time.deltaTime * speed);
-        coinsUI.text = coins.ToString();
+        //coinsUI.text = coins.ToString();
     }
 
 
@@ -23,7 +23,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            coins++;
+            CoinBar.instance.AddCoins(1);
             Destroy(gameObject, 0.1f);
         }
     }

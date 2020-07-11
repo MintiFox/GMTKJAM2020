@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioCategory playerHurtSounds;
     public AudioCategory meteorCollideSounds;
-    
+    public AudioCategory coinSounds;
 
 
     private void Awake()
