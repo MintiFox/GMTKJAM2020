@@ -2016,14 +2016,13 @@ GameObject:
   - component: {fileID: 845687784}
   - component: {fileID: 845687787}
   - component: {fileID: 845687786}
-  - component: {fileID: 845687785}
   m_Layer: 5
   m_Name: Power Up Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &845687784
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2044,25 +2043,6 @@ RectTransform:
   m_AnchoredPosition: {x: 125, y: -17.3}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &845687785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845687783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 918cbdf9b4c65134a9c0bfc2f07cf0da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  img: {fileID: 57308153}
-  images:
-  - {fileID: 5029476521150034980, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: 4883671998760618603, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: -9209634972083854483, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: 1557759945179819784, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: 1803501121521088656, guid: b017acb797ccef144896f640396bf1e1, type: 3}
 --- !u!114 &845687786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4011,7 +3991,7 @@ GameObject:
   - component: {fileID: 1787472930}
   - component: {fileID: 1787472933}
   - component: {fileID: 1787472932}
-  - component: {fileID: 1787472931}
+  - component: {fileID: 1787472934}
   m_Layer: 5
   m_Name: Power Up Timer
   m_TagString: Untagged
@@ -4039,25 +4019,6 @@ RectTransform:
   m_AnchoredPosition: {x: 44, y: -17.3}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1787472931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787472929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 918cbdf9b4c65134a9c0bfc2f07cf0da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  img: {fileID: 57308153}
-  images:
-  - {fileID: 5029476521150034980, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: 4883671998760618603, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: -9209634972083854483, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: 1557759945179819784, guid: b017acb797ccef144896f640396bf1e1, type: 3}
-  - {fileID: 1803501121521088656, guid: b017acb797ccef144896f640396bf1e1, type: 3}
 --- !u!114 &1787472932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4096,6 +4057,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787472929}
   m_CullTransparentMesh: 0
+--- !u!114 &1787472934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787472929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918cbdf9b4c65134a9c0bfc2f07cf0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 57308153}
+  images:
+  - {fileID: 5029476521150034980, guid: b017acb797ccef144896f640396bf1e1, type: 3}
+  - {fileID: 4883671998760618603, guid: b017acb797ccef144896f640396bf1e1, type: 3}
+  - {fileID: -9209634972083854483, guid: b017acb797ccef144896f640396bf1e1, type: 3}
+  - {fileID: 1557759945179819784, guid: b017acb797ccef144896f640396bf1e1, type: 3}
+  - {fileID: 1803501121521088656, guid: b017acb797ccef144896f640396bf1e1, type: 3}
 --- !u!1 &1834102395
 GameObject:
   m_ObjectHideFlags: 0
