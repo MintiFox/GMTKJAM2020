@@ -41,6 +41,20 @@ public class AudioCategory
 
     }
 
+    public void playSequential(int id)
+    {
+
+        if (id < sounds.Length && id >= 0)
+        {
+            sound.clip = sounds[id];
+            sound.Play();
+
+        }
+
+
+
+    }
+
 
 }
 

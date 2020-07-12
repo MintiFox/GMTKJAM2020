@@ -12,6 +12,8 @@ public class CoinBar : MonoBehaviour
 
 
     public static CoinBar instance;
+    public int[] soundLevelAtCount;
+
 
     private void Awake()
     {
@@ -23,9 +25,10 @@ public class CoinBar : MonoBehaviour
     {
         currentCount += coins;
 
-        if (AudioManager.instance != null)
-        AudioManager.instance.coinSounds.PlayRandom();
-
+        if (AudioManager.instance != null && coins > 0)
+        {
+            AudioManager.instance.coinSounds.playSequential(soundLevelAtCount[currentCount]);
+        }
 
         barFill.fillAmount = ((float)currentCount / (float)maxCount);
     }

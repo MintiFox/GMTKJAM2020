@@ -923,7 +923,12 @@ MonoBehaviour:
   coinSounds:
     sound: {fileID: 323675682}
     sounds:
-    - {fileID: 8300000, guid: 8fd1c5805f7b6734bbaf940f768a8b65, type: 3}
+    - {fileID: 8300000, guid: 9cd2891af1196044d96ed60b7d21d818, type: 3}
+    - {fileID: 8300000, guid: 8b3b48deb13e36e44a4740bab5802f6e, type: 3}
+    - {fileID: 8300000, guid: 667b4b205ce6a8b438e9f034670fc80d, type: 3}
+    - {fileID: 8300000, guid: c711375fabdb1f140aa8c195d7e05186, type: 3}
+    - {fileID: 8300000, guid: 6b31d027a5fc83e4db080b320dc985d7, type: 3}
+    - {fileID: 8300000, guid: b9ea094b3eef0b34895e1175d44ef354, type: 3}
 --- !u!82 &323675681
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4054,24 +4059,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989136825}
   m_CullTransparentMesh: 0
---- !u!1 &1989147660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7043946192887300225, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7043946191010472665}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1989147661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989147660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f673c54f0c299c4d94a022c36e8d1f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2026328350
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +4320,7 @@ MonoBehaviour:
   barFill: {fileID: 2139743764}
   currentCount: 0
   maxCount: 10
+  soundLevelAtCount: 00000000000000000100000001000000020000000200000003000000040000000500000005000000
 --- !u!114 &2139743764
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class PowerUpManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             PowerUpItem item = new PowerUpItem();
             foreach (PowerUpItem current in items)
