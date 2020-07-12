@@ -43,6 +43,7 @@ public class HighScoreBoard : MonoBehaviour
     void SetBoardText()
     {
         if (boardTexts == null) return;
+        if (boardTexts[0] == null) return;
 
         boardTexts[0].text = scores[0].ToString();
         boardTexts[1].text = scores[1].ToString();

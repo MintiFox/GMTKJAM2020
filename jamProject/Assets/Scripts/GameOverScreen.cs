@@ -20,7 +20,8 @@ public class GameOverScreen : MonoBehaviour
         sc.scorePerSecond = 0;
         scoreText.text = sc.score.ToString() + "m";
 
-        hsb = new HighScoreBoard();
+        //hsb = new HighScoreBoard();
+        hsb = gameObject.AddComponent<HighScoreBoard>();
 
         if (hsb.AddScore(sc.score))
         { highscoretext.SetActive(true); }
