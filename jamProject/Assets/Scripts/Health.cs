@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
 
     public Sprite fullSprite;
     public Sprite emptySprite;
+    public GameOverScreen gos;
 
     public void Damage(int dmg)
     {
@@ -24,19 +25,24 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("TitleScene");
+            gos.GameOver();
         }
     }
 
 
     void updateUI()
     {
+
+        if (health < 0)
+            health = 0;
+
         for (int i = 0; i < health; i++)
         {
             hearts[i].sprite = fullSprite;
 
 
         }
+       
         for (int i = health; i < hearts.Length; i++)
         {
             hearts[i].sprite = emptySprite;

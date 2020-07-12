@@ -17,17 +17,20 @@ public class HighScoreBoard : MonoBehaviour
 
     private void Start()
     {
-        if (scores == null)
-            scores = new int[5];
+       
         if (boardTexts == null)
             boardTexts = new TextMeshProUGUI[5];
 
         LoadScores();
+        SetBoardText();
     }
 
 
-    void LoadScores()
+    public void LoadScores()
     {
+        if (scores == null)
+            scores = new int[5];
+
 
         scores[0] = PlayerPrefs.GetInt("Score1", 0);
         scores[1] = PlayerPrefs.GetInt("Score2", 0);
@@ -35,11 +38,12 @@ public class HighScoreBoard : MonoBehaviour
         scores[3] = PlayerPrefs.GetInt("Score4", 0);
         scores[4] = PlayerPrefs.GetInt("Score5", 0);
 
-        SetBoardText();
 
     }
     void SetBoardText()
     {
+        if (boardTexts == null) return;
+
         boardTexts[0].text = scores[0].ToString();
         boardTexts[1].text = scores[1].ToString();
         boardTexts[2].text = scores[2].ToString();
@@ -69,12 +73,17 @@ public class HighScoreBoard : MonoBehaviour
     }
 
     //very brute force, but for the sake of time, I'm not worrying about elegance.
-    public void AddScore(int score)
+    //also, returns true if the score you add is a new high score.
+    public bool AddScore(int score)
     {
+
+        LoadScores();
+        bool highscore = false;
 
         if (score > scores[0])
         {
             scores = new int[] { score, scores[0], scores[1], scores[2], scores[3] };
+            highscore = true;
         }
         else if (score > scores[1])
         {
@@ -97,8 +106,9 @@ public class HighScoreBoard : MonoBehaviour
 
         }
 
-
         SaveScores();
+        return highscore;
+
     }
 
     void SaveScores()
