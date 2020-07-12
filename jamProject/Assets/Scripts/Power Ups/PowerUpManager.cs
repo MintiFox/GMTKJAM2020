@@ -18,6 +18,14 @@ public class PowerUpManager : MonoBehaviour
         else { Destroy(this); }
     }
 
+    void Start()
+    {
+        transform.parent = Camera.main.transform;
+        transform.localPosition = Vector3.zero;
+        transform.localScale = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))

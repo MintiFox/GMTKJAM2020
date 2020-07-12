@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c73861f2c8acb543b9dd46a09ea2ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageIndex: 1
+  imageIndex: 3
   duration: 10
   autoRemove: 1
 --- !u!1001 &5688515554716836324
@@ -22,6 +22,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4697025286372815865, guid: c3adafb367399b546a31299e5aa04c78,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a708691fa3872604d8f85fc863bcc885, type: 3}
     - target: {fileID: 7717050856530851297, guid: c3adafb367399b546a31299e5aa04c78,
         type: 3}
       propertyPath: m_LocalPosition.x

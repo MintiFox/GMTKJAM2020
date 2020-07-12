@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PowerUp : MonoBehaviour
 {
     [Header("Power Up Settings")]
@@ -24,6 +25,7 @@ public class PowerUp : MonoBehaviour
 
         if (++PowerUpManager.instance.activated[GetType()] == 1)
         {
+            GetComponent<AudioSource>().Play();
             ApplyPowerUp();
         }
         yield return new WaitForSeconds(duration);

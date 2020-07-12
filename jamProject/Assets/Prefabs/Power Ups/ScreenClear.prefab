@@ -12,13 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa6d856bf3bbec44b34c114c0e1eb27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDestroy:
-  - {fileID: 3545159428587559695}
-  - {fileID: 6866331224566196798}
-  duaration: 0
-  manager: {fileID: 0}
+  imageIndex: 0
+  duration: 0
   autoRemove: 1
-  speed: 2
 --- !u!1001 &6497171892149137121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26,6 +22,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4697025286372815865, guid: c3adafb367399b546a31299e5aa04c78,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 85ce6dd38b7ae734bb2768a22f59587c, type: 3}
     - target: {fileID: 7717050856530851297, guid: c3adafb367399b546a31299e5aa04c78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -112,18 +113,6 @@ PrefabInstance:
 --- !u!1 &3545159428587559692 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7717050856530851309, guid: c3adafb367399b546a31299e5aa04c78,
-    type: 3}
-  m_PrefabInstance: {fileID: 6497171892149137121}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &3545159428587559695 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7717050856530851310, guid: c3adafb367399b546a31299e5aa04c78,
-    type: 3}
-  m_PrefabInstance: {fileID: 6497171892149137121}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &6866331224566196798 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 387464286001382623, guid: c3adafb367399b546a31299e5aa04c78,
     type: 3}
   m_PrefabInstance: {fileID: 6497171892149137121}
   m_PrefabAsset: {fileID: 0}
