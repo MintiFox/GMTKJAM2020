@@ -14,6 +14,9 @@ public class CoinBar : MonoBehaviour
     public static CoinBar instance;
     public int[] soundLevelAtCount;
 
+    public Image img;
+    public Sprite[] powerUpSprites;
+    public int[] powerUpAtCost;
 
     private void Awake()
     {
@@ -32,8 +35,24 @@ public class CoinBar : MonoBehaviour
             AudioManager.instance.coinSounds.playSequential(soundLevelAtCount[currentCount - 1]);
         }
 
+        UpdateUI();
+
         barFill.fillAmount = ((float)currentCount / (float)maxCount);
     }
 
+
+    void UpdateUI()
+    {
+        if (currentCount < 1)
+        {
+            img.gameObject.SetActive(false);
+            return;
+        }
+
+        img.gameObject.SetActive(true);
+
+        img.sprite = powerUpSprites[powerUpAtCost[currentCount]];
+    
+    }
 
 }
