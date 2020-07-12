@@ -23,6 +23,8 @@ public class PowerUpTimer : MonoBehaviour
     {
         if (instance == null) instance = this;
         else Destroy(this);
+
+        gameObject.SetActive(false);
     }
 
     public void setTimer(int imageIndex, float time)
