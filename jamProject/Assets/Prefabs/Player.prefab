@@ -46,7 +46,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.25
+  m_Radius: 4
 --- !u!1 &7043946192887300225
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   torqueSpeed: 1500
   maxVelocity: 100
   maxAngularVelocity: 500
+  testDifficulty: 0
   maxHazards: 0
   spawnTime:
     serializedVersion: 2
@@ -258,3 +259,4 @@ MonoBehaviour:
   emptySprite: {fileID: 7322450618867673665, guid: fa1c1ecd9ee523949b77215110c67ab0,
     type: 3}
   gos: {fileID: 0}
+  hitEffect: {fileID: 0}
