@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public float maxAngularVelocity = 400.0F;
 
     [Header("Spawn")]
+    public float testDifficulty;
     public uint maxHazards;
     public AnimationCurve spawnTime = new AnimationCurve();
 
@@ -56,7 +57,7 @@ public class Player : MonoBehaviour
     {
         while (isActiveAndEnabled)
         {
-            yield return new WaitForSeconds(spawnTime.Evaluate(Time.time));
+            yield return new WaitForSeconds(spawnTime.Evaluate(testDifficulty == 0 ? Time.time : testDifficulty));
             if (maxHazards == 0 || GameObject.FindGameObjectsWithTag("Hazard").Length < maxHazards)
             {
                 StartCoroutine(spawner[UnityEngine.Random.Range(0, spawner.Length - 1)].Spawn());

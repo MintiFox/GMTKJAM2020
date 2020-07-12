@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    public IEnumerator Spawn()
+    public IEnumerator Spawn(float testDifficulty)
     {
         // GET RANGE SIZE
         float possibleRange = getRangeSize();
@@ -181,11 +181,12 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    public void ApplyVelocity(GameObject obj)
+    public void ApplyVelocity(GameObject obj, float testDifficulty)
     {
         SetVelocity sv = obj.GetComponent<SetVelocity>();
-        Vector2 hVelocity = UnityEngine.Random.Range(minHorizontalVelocity.Evaluate(Time.time), maxHorizontalVelocity.Evaluate(Time.time)) * (flipHorizontal ? -1.0F : 1.0F) * transform.right;
-        Vector2 vVelocity = UnityEngine.Random.Range(minVerticalVelocity.Evaluate(Time.time), maxVerticalVelocity.Evaluate(Time.time)) * (flipVertical ? -1.0F : 1.0F) * transform.up;
+        float currentTime = testDifficulty == 0 ? Time.time : testDifficulty;
+        Vector2 hVelocity = UnityEngine.Random.Range(minHorizontalVelocity.Evaluate(currentTime), maxHorizontalVelocity.Evaluate(currentTime)) * (flipHorizontal ? -1.0F : 1.0F) * transform.right;
+        Vector2 vVelocity = UnityEngine.Random.Range(minVerticalVelocity.Evaluate(currentTime), maxVerticalVelocity.Evaluate(currentTime)) * (flipVertical ? -1.0F : 1.0F) * transform.up;
         Vector3 velocity = hVelocity + vVelocity;
         if (sv != null)
         {
