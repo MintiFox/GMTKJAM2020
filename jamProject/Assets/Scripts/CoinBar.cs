@@ -25,9 +25,11 @@ public class CoinBar : MonoBehaviour
     {
         currentCount += coins;
 
+        if (currentCount > maxCount) currentCount = maxCount;
+
         if (AudioManager.instance != null && coins > 0)
         {
-            AudioManager.instance.coinSounds.playSequential(soundLevelAtCount[currentCount]);
+            AudioManager.instance.coinSounds.playSequential(soundLevelAtCount[currentCount - 1]);
         }
 
         barFill.fillAmount = ((float)currentCount / (float)maxCount);
