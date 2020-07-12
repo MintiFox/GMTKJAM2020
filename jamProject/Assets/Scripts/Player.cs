@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
     {
         while (isActiveAndEnabled)
         {
-            yield return new WaitForSeconds(spawnTime.Evaluate(testDifficulty == 0 ? Time.time : testDifficulty));
+            yield return new WaitForSeconds(spawnTime.Evaluate(testDifficulty == 0 ? Time.timeSinceLevelLoad : testDifficulty));
             if (maxHazards == 0 || GameObject.FindGameObjectsWithTag("Hazard").Length < maxHazards)
             {
                 StartCoroutine(spawner[UnityEngine.Random.Range(0, spawner.Length - 1)].Spawn(testDifficulty));

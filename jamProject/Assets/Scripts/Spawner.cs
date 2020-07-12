@@ -184,7 +184,7 @@ public class Spawner : MonoBehaviour
     public void ApplyVelocity(GameObject obj, float testDifficulty)
     {
         SetVelocity sv = obj.GetComponent<SetVelocity>();
-        float currentTime = testDifficulty == 0 ? Time.time : testDifficulty;
+        float currentTime = testDifficulty == 0 ? Time.timeSinceLevelLoad : testDifficulty;
         Vector2 hVelocity = UnityEngine.Random.Range(minHorizontalVelocity.Evaluate(currentTime), maxHorizontalVelocity.Evaluate(currentTime)) * (flipHorizontal ? -1.0F : 1.0F) * transform.right;
         Vector2 vVelocity = UnityEngine.Random.Range(minVerticalVelocity.Evaluate(currentTime), maxVerticalVelocity.Evaluate(currentTime)) * (flipVertical ? -1.0F : 1.0F) * transform.up;
         Vector3 velocity = hVelocity + vVelocity;
