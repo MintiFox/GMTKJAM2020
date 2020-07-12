@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageIndex: 0
-  duaration: 20
+  duration: 20
   autoRemove: 1
   movmentSpeed: 2000
   torqueSpeed: 500

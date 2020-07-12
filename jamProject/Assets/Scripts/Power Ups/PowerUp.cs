@@ -7,7 +7,7 @@ public class PowerUp : MonoBehaviour
 {
     [Header("Power Up Settings")]
     public int imageIndex;
-    public float duaration;
+    public float duration;
     public bool autoRemove = true;
 
     public void Activate()
@@ -26,7 +26,7 @@ public class PowerUp : MonoBehaviour
         {
             ApplyPowerUp();
         }
-        yield return new WaitForSeconds(duaration);
+        yield return new WaitForSeconds(duration);
         if (autoRemove && (PowerUpManager.instance.activated[GetType()] = Math.Max(1, PowerUpManager.instance.activated[GetType()]) - 1) == 0)
         {
             RemovePowerUp();

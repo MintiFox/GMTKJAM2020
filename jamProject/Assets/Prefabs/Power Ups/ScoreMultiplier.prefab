@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageIndex: 4
-  duaration: 10
+  duration: 20
   autoRemove: 1
 --- !u!1001 &6167517428337044789
 PrefabInstance:

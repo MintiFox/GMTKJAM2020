@@ -35,9 +35,9 @@ public class PowerUpManager : MonoBehaviour
             {
                 CoinBar.instance.AddCoins(-CoinBar.instance.currentCount);
                 item.powerUp.Activate();
-                if (item.powerUp.duaration > 0.0F)
+                if (item.powerUp.duration > 0.0F)
                 {
-                    PowerUpTimer.instance.setTimer(item.powerUp.imageIndex, item.powerUp.duaration);
+                    PowerUpTimer.instance.setTimer(item.powerUp.imageIndex, item.powerUp.duration);
                 }
             }
         }
