@@ -225,7 +225,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  hearts: []
-  fullSprite: {fileID: 0}
-  emptySprite: {fileID: 0}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullSprite: {fileID: -5758311846478516137, guid: fa1c1ecd9ee523949b77215110c67ab0,
+    type: 3}
+  emptySprite: {fileID: 7322450618867673665, guid: fa1c1ecd9ee523949b77215110c67ab0,
+    type: 3}
   gos: {fileID: 0}

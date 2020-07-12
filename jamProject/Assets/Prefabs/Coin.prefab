@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   magnetSpeed: 2
+  coinEffect: {fileID: 1648459638207760505, guid: ea3ff48f3c5c21645ac0165153481e02,
+    type: 3}
 --- !u!114 &9182771542451429584
 MonoBehaviour:
   m_ObjectHideFlags: 0

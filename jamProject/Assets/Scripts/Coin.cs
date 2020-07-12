@@ -12,6 +12,8 @@ public class Coin : MonoBehaviour
     //public Text coinsUI;
     private Transform player;
     private bool inMagnet = false;
+    public GameObject coinEffect;
+
 
     void Start()
     {
@@ -39,7 +41,17 @@ public class Coin : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CoinBar.instance.AddCoins(1);
+
+            if (coinEffect != null)
+            {
+                GameObject go = Instantiate(coinEffect);
+                go.transform.parent = other.transform;
+                go.transform.position = other.transform.position;
+            }
+
             Destroy(gameObject, 0.1f);
+
+
         } 
         else if (other.CompareTag("Coin Magnet"))
         {

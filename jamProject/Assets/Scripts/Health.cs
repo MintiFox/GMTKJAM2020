@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
     public Sprite emptySprite;
     public GameOverScreen gos;
 
+    public GameObject hitEffect;
+
     public void Damage(int dmg)
     {
         if (!PowerUpManager.instance.IsActivated(typeof(Invincibility)))
@@ -23,6 +25,12 @@ public class Health : MonoBehaviour
 
             if (AudioManager.instance != null)
             AudioManager.instance.playerHurtSounds.PlayRandom();
+
+            if (hitEffect != null)
+            {
+             GameObject go =  Instantiate(hitEffect);
+                go.transform.position = transform.position;
+            }
 
 
             if (health <= 0)

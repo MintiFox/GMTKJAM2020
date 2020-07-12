@@ -4041,26 +4041,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989136825}
   m_CullTransparentMesh: 0
---- !u!1 &1989147660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7043946192887300225, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7043946191010472665}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1989147661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989147660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f673c54f0c299c4d94a022c36e8d1f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lastTimer: 10
-  InvIsActive: 0
 --- !u!1 &2026328350
 GameObject:
   m_ObjectHideFlags: 0
@@ -4368,11 +4348,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3384124691176600994, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
         type: 3}
-      propertyPath: hearts.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3384124691176600994, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1660177606}
@@ -4388,21 +4363,15 @@ PrefabInstance:
       objectReference: {fileID: 1854405357}
     - target: {fileID: 3384124691176600994, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
         type: 3}
-      propertyPath: fullSprite
-      value: 
-      objectReference: {fileID: -5758311846478516137, guid: fa1c1ecd9ee523949b77215110c67ab0,
-        type: 3}
-    - target: {fileID: 3384124691176600994, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
-      propertyPath: emptySprite
-      value: 
-      objectReference: {fileID: 7322450618867673665, guid: fa1c1ecd9ee523949b77215110c67ab0,
-        type: 3}
-    - target: {fileID: 3384124691176600994, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
       propertyPath: gos
       value: 
       objectReference: {fileID: 2042780676}
+    - target: {fileID: 3384124691176600994, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 4574647668168665842, guid: bf50af57e3d900845826e247e56843df,
+        type: 3}
     - target: {fileID: 6275528663937306041, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
         type: 3}
       propertyPath: m_Name
