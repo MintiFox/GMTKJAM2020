@@ -5,13 +5,23 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    [Header("Spawn Settings")]
     public GameObject[] objects;
     public Vector3 offset = new Vector2(0.0F, -2.0F);
+
+    [Header("Spawn Block")]
     public float blockTime;
     public float blockRange;
-    public RangeFloat verticalVelocity;
-    public RangeFloat horiziontalVelocity;
-    public bool flip;
+
+    [Header("Velocity Settings/Horizontal")]
+    public AnimationCurve minHorizontalVelocity;
+    public AnimationCurve maxHorizontalVelocity;
+    public bool flipHorizontal;
+
+    [Header("Velocity Settings/Vertical")]
+    public AnimationCurve minVerticalVelocity;
+    public AnimationCurve maxVerticalVelocity;
+    public bool flipVertical;
 
     private List<RangeFloat> blocked = new List<RangeFloat>();
 
@@ -174,7 +184,9 @@ public class Spawner : MonoBehaviour
     public void ApplyVelocity(GameObject obj)
     {
         SetVelocity sv = obj.GetComponent<SetVelocity>();
-        Vector3 velocity = verticalVelocity.RandomFloat() * transform.up + horiziontalVelocity.RandomFloat() * (flip ? -1.0F : 1.0F) * transform.right;
+        Vector2 hVelocity = UnityEngine.Random.Range(minHorizontalVelocity.Evaluate(Time.time), maxHorizontalVelocity.Evaluate(Time.time)) * (flipHorizontal ? -1.0F : 1.0F) * transform.right;
+        Vector2 vVelocity = UnityEngine.Random.Range(minVerticalVelocity.Evaluate(Time.time), maxVerticalVelocity.Evaluate(Time.time)) * (flipVertical ? -1.0F : 1.0F) * transform.up;
+        Vector3 velocity = hVelocity + vVelocity;
         if (sv != null)
         {
             sv.initialVelocity = velocity;

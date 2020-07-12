@@ -100,11 +100,35 @@ MonoBehaviour:
   torqueSpeed: 1500
   maxVelocity: 100
   maxAngularVelocity: 500
-  spawnTime: 2
-  up: {fileID: 0}
-  down: {fileID: 0}
-  left: {fileID: 0}
-  right: {fileID: 0}
+  maxHazards: 0
+  spawnTime:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 2
+      inSlope: -0.005
+      outSlope: -0.005
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 300
+      value: 0.5
+      inSlope: -0.005
+      outSlope: -0.005
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  up: {fileID: 2977569844517734614, guid: 0ee2d13dcb7237f479b47b4cfca26c42, type: 3}
+  down: {fileID: 3327323585742029832, guid: 2100fad2dfa9d894dab013c31ebc1f72, type: 3}
+  left: {fileID: 3816935027198973208, guid: cee4c149b7d94b148ba0d6e135749929, type: 3}
+  right: {fileID: 4107042997955647729, guid: d88b0c4f1fc8a714eb4105c3306b108d, type: 3}
 --- !u!50 &7043946192887300227
 Rigidbody2D:
   serializedVersion: 4

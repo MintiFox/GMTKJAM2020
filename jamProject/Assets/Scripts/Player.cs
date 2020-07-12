@@ -11,7 +11,9 @@ public class Player : MonoBehaviour
     public float maxVelocity = 1.75F;
     public float maxAngularVelocity = 400.0F;
 
-    public float spawnTime = 2.0F;
+    [Header("Spawn")]
+    public uint maxHazards;
+    public AnimationCurve spawnTime = new AnimationCurve();
 
     [Header("Walls")]
     public GameObject up;
@@ -54,8 +56,11 @@ public class Player : MonoBehaviour
     {
         while (isActiveAndEnabled)
         {
-            yield return new WaitForSeconds(spawnTime);
-            StartCoroutine(spawner[UnityEngine.Random.Range(0, spawner.Length - 1)].Spawn());
+            yield return new WaitForSeconds(spawnTime.Evaluate(Time.time));
+            if (maxHazards == 0 || GameObject.FindGameObjectsWithTag("Hazard").Length < maxHazards)
+            {
+                StartCoroutine(spawner[UnityEngine.Random.Range(0, spawner.Length - 1)].Spawn());
+            }
         }
     }
 

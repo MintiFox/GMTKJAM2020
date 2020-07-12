@@ -4054,6 +4054,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989136825}
   m_CullTransparentMesh: 0
+--- !u!1 &1989147660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7043946192887300225, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7043946191010472665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1989147661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989147660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f673c54f0c299c4d94a022c36e8d1f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2026328350
 GameObject:
   m_ObjectHideFlags: 0
@@ -4390,35 +4408,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Magnet
       objectReference: {fileID: 0}
-    - target: {fileID: 7043946192887300224, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
-      propertyPath: spawnTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7043946192887300224, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
-      propertyPath: down
-      value: 
-      objectReference: {fileID: 3327323585742029832, guid: 2100fad2dfa9d894dab013c31ebc1f72,
-        type: 3}
-    - target: {fileID: 7043946192887300224, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
-      propertyPath: up
-      value: 
-      objectReference: {fileID: 2977569844517734614, guid: 0ee2d13dcb7237f479b47b4cfca26c42,
-        type: 3}
-    - target: {fileID: 7043946192887300224, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
-      propertyPath: left
-      value: 
-      objectReference: {fileID: 3816935027198973208, guid: cee4c149b7d94b148ba0d6e135749929,
-        type: 3}
-    - target: {fileID: 7043946192887300224, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
-        type: 3}
-      propertyPath: right
-      value: 
-      objectReference: {fileID: 4107042997955647729, guid: d88b0c4f1fc8a714eb4105c3306b108d,
-        type: 3}
     - target: {fileID: 7043946192887300225, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
         type: 3}
       propertyPath: m_Name

@@ -72,5 +72,10 @@ PrefabInstance:
       propertyPath: flip
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8389466764611715987, guid: d88b0c4f1fc8a714eb4105c3306b108d,
+        type: 3}
+      propertyPath: flipHorizontal
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d88b0c4f1fc8a714eb4105c3306b108d, type: 3}
