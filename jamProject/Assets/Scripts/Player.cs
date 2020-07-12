@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(spawnTime.Evaluate(testDifficulty == 0 ? Time.time : testDifficulty));
             if (maxHazards == 0 || GameObject.FindGameObjectsWithTag("Hazard").Length < maxHazards)
             {
-                StartCoroutine(spawner[UnityEngine.Random.Range(0, spawner.Length - 1)].Spawn());
+                StartCoroutine(spawner[UnityEngine.Random.Range(0, spawner.Length - 1)].Spawn(testDifficulty));
             }
         }
     }

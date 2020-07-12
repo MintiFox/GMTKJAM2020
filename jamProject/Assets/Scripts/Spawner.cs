@@ -55,7 +55,7 @@ public class Spawner : MonoBehaviour
                 GameObject obj = objects[UnityEngine.Random.Range(0, objects.Length)];
                 GameObject iobj = Instantiate(obj, transform.TransformPoint(offset + new Vector3(position - 0.5F, 0.0F)) * Vector2.one, obj.transform.rotation);
 
-                ApplyVelocity(iobj);
+                ApplyVelocity(iobj, testDifficulty);
                 
                 blocked.Add(range);
                 yield return new WaitForSeconds(blockTime);
