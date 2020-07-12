@@ -6,15 +6,30 @@ using UnityEngine.UI;
 public class Coin : MonoBehaviour
 {
     public float speed;
+    public float magnetSpeed;
 
     //public int coins;
     //public Text coinsUI;
+    private Transform player;
+    private bool inMagnet = false;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.up * Time.deltaTime * speed);
+        if (inMagnet && PowerUpManager.instance.IsActivated(typeof(CoinMagnet)))
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.position, Time.deltaTime * magnetSpeed);
+        }
+        else
+        {
+            transform.Translate(Vector3.up * Time.deltaTime * speed);
+        }
         //coinsUI.text = coins.ToString();
     }
 
@@ -25,6 +40,18 @@ public class Coin : MonoBehaviour
         {
             CoinBar.instance.AddCoins(1);
             Destroy(gameObject, 0.1f);
+        } 
+        else if (other.CompareTag("Coin Magnet"))
+        {
+            inMagnet = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Coin Magnet"))
+        {
+            inMagnet = false;
         }
     }
 }

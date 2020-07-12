@@ -98,8 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  coins: 0
-  coinsUI: {fileID: 0}
+  magnetSpeed: 2
 --- !u!114 &9182771542451429584
 MonoBehaviour:
   m_ObjectHideFlags: 0

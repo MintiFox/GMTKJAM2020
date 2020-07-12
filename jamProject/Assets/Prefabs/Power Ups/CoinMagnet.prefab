@@ -15,7 +15,7 @@ MonoBehaviour:
   toDestroy:
   - {fileID: 1602964547836803362}
   - {fileID: 8666662544183461907}
-  duaration: 5
+  duaration: 15
   manager: {fileID: 0}
   autoRemove: 1
   speed: 2

@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
 
     public void Damage(int dmg)
     {
-        if (PowerUpManager.instance.activated.TryGetValue(typeof(Invincibility), out uint v) && v > 0)
+        if (PowerUpManager.instance.IsActivated(typeof(Invincibility)))
         {
             PowerUpManager.instance.activated[typeof(Invincibility)] -= 1;
             return;

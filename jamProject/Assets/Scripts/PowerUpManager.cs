@@ -48,4 +48,9 @@ public class PowerUpManager : MonoBehaviour
             obj.GetComponent<PowerUp>().manager = this;
         }
     }
+
+    public bool IsActivated(System.Type type)
+    {
+        return PowerUpManager.instance.activated.TryGetValue(type, out uint v) && v > 0;
+    }
 }
