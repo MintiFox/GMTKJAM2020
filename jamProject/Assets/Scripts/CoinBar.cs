@@ -43,7 +43,8 @@ public class CoinBar : MonoBehaviour
 
     void UpdateUI()
     {
-        if (currentCount < 1)
+
+        if (currentCount <= 1)
         {
             img.gameObject.SetActive(false);
             return;
@@ -52,7 +53,8 @@ public class CoinBar : MonoBehaviour
         img.gameObject.SetActive(true);
 
         img.sprite = powerUpSprites[powerUpAtCost[currentCount]];
-    
+        img.gameObject.SetActive(true);
+
     }
 
 }
