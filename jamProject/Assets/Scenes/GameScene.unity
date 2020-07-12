@@ -3640,6 +3640,11 @@ PrefabInstance:
       propertyPath: gos
       value: 
       objectReference: {fileID: 2042780676}
+    - target: {fileID: 6275528663937306041, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
+        type: 3}
+      propertyPath: m_Name
+      value: Coin Magnet
+      objectReference: {fileID: 0}
     - target: {fileID: 7043946192887300224, guid: 0e3a0f0fdea2ec249a53a32f48d58f9b,
         type: 3}
       propertyPath: spawnTime
