@@ -14,6 +14,8 @@ public class GameOverScreen : MonoBehaviour
 
     public void GameOver()
     {
+        StopGame();
+
         gameObject.SetActive(true);
         sc.scorePerSecond = 0;
         scoreText.text = sc.score.ToString() + "m";
@@ -25,4 +27,14 @@ public class GameOverScreen : MonoBehaviour
 
     }
 
+    private void StopGame()
+    {
+        // PLAYER
+        Destroy(GameObject.FindGameObjectWithTag("Player"));
+
+        // SPAWNER
+        Destroy(FindObjectOfType<CoinSpawner>());
+        Destroy(PowerUpManager.instance);
+        PowerUpManager.instance = null;
+    }
 }
