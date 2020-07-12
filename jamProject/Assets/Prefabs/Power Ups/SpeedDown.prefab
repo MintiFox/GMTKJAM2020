@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: modifier
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: -8557551529944417804, guid: d5ccc8d1a7992334e930fd05043487d7,
+        type: 3}
+      propertyPath: imageIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 368044952285094545, guid: d5ccc8d1a7992334e930fd05043487d7,
         type: 3}
       propertyPath: m_Name

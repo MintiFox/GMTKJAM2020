@@ -16,22 +16,19 @@ public class Health : MonoBehaviour
 
     public void Damage(int dmg)
     {
-        if (PowerUpManager.instance.IsActivated(typeof(Invincibility)))
+        if (!PowerUpManager.instance.IsActivated(typeof(Invincibility)))
         {
-            PowerUpManager.instance.activated[typeof(Invincibility)] -= 1;
-            return;
-        }
+            health -= dmg;
+            updateUI();
 
-        health -= dmg;
-        updateUI();
-
-        if (AudioManager.instance != null)
-        AudioManager.instance.playerHurtSounds.PlayRandom();
+            if (AudioManager.instance != null)
+            AudioManager.instance.playerHurtSounds.PlayRandom();
 
 
-        if (health <= 0)
-        {
-            gos.GameOver();
+            if (health <= 0)
+            {
+                gos.GameOver();
+            }
         }
     }
 

@@ -6,12 +6,9 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour
 {
     [Header("Power Up Settings")]
+    public int imageIndex;
     public float duaration;
     public bool autoRemove = true;
-
-    void Update()
-    {
-    }
 
     public void Activate()
     {
@@ -34,7 +31,6 @@ public class PowerUp : MonoBehaviour
         {
             RemovePowerUp();
         }
-        Destroy(gameObject);
     }
 
     public virtual void ApplyPowerUp()

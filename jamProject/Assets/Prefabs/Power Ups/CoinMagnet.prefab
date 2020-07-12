@@ -12,13 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db58f91df00098144bceccec1aa0f03d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDestroy:
-  - {fileID: 1602964547836803362}
-  - {fileID: 8666662544183461907}
+  imageIndex: 2
   duaration: 15
-  manager: {fileID: 0}
   autoRemove: 1
-  speed: 2
 --- !u!1001 &9018079048537885900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112,18 +108,6 @@ PrefabInstance:
 --- !u!1 &1602964547836803361 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7717050856530851309, guid: c3adafb367399b546a31299e5aa04c78,
-    type: 3}
-  m_PrefabInstance: {fileID: 9018079048537885900}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1602964547836803362 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7717050856530851310, guid: c3adafb367399b546a31299e5aa04c78,
-    type: 3}
-  m_PrefabInstance: {fileID: 9018079048537885900}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &8666662544183461907 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 387464286001382623, guid: c3adafb367399b546a31299e5aa04c78,
     type: 3}
   m_PrefabInstance: {fileID: 9018079048537885900}
   m_PrefabAsset: {fileID: 0}

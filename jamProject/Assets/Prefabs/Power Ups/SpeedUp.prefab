@@ -12,13 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33158d0aa7c8dfe4889c6ba9e51261ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDestroy:
-  - {fileID: 368044952285094546}
-  - {fileID: 7738163301522232227}
+  imageIndex: 0
   duaration: 5
-  manager: {fileID: 0}
   autoRemove: 1
-  speed: 2
   movmentSpeed: 2000
   torqueSpeed: 500
   maxVelocity: 50
@@ -108,18 +104,6 @@ PrefabInstance:
 --- !u!1 &368044952285094545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7717050856530851309, guid: c3adafb367399b546a31299e5aa04c78,
-    type: 3}
-  m_PrefabInstance: {fileID: 7927450460144867196}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &368044952285094546 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7717050856530851310, guid: c3adafb367399b546a31299e5aa04c78,
-    type: 3}
-  m_PrefabInstance: {fileID: 7927450460144867196}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &7738163301522232227 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 387464286001382623, guid: c3adafb367399b546a31299e5aa04c78,
     type: 3}
   m_PrefabInstance: {fileID: 7927450460144867196}
   m_PrefabAsset: {fileID: 0}
